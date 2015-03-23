@@ -2064,10 +2064,10 @@ public class ArrayUtils {
             return;
         }
         for (int i = 0; i < len; i++) {
-	        byte aux = array[offset1 + i];
-	        array[offset1 + i] = array[offset2 + i];
-	        array[offset2 + i] = aux;
-    	}
+            byte aux = array[offset1 + i];
+            array[offset1 + i] = array[offset2 + i];
+            array[offset2 + i] = aux;
+        }
     }
 
     /**
@@ -2086,10 +2086,10 @@ public class ArrayUtils {
             return;
         }
         for (int i = 0; i < len; i++) {
-	        char aux = array[offset1 + i];
-	        array[offset1 + i] = array[offset2 + i];
-	        array[offset2 + i] = aux;
-    	}
+            char aux = array[offset1 + i];
+            array[offset1 + i] = array[offset2 + i];
+            array[offset2 + i] = aux;
+        }
     }
 
     /**
@@ -2108,10 +2108,10 @@ public class ArrayUtils {
             return;
         }
         for (int i = 0; i < len; i++) {
-	        double aux = array[offset1 + i];
-	        array[offset1 + i] = array[offset2 + i];
-	        array[offset2 + i] = aux;
-    	}
+            double aux = array[offset1 + i];
+            array[offset1 + i] = array[offset2 + i];
+            array[offset2 + i] = aux;
+        }
     }
 
     /**
@@ -2130,10 +2130,10 @@ public class ArrayUtils {
             return;
         }
         for (int i = 0; i < len; i++) {
-	        float aux = array[offset1 + i];
-	        array[offset1 + i] = array[offset2 + i];
-	        array[offset2 + i] = aux;
-    	}
+            float aux = array[offset1 + i];
+            array[offset1 + i] = array[offset2 + i];
+            array[offset2 + i] = aux;
+        }
     }
 
     /**
@@ -2152,10 +2152,10 @@ public class ArrayUtils {
             return;
         }
         for (int i = 0; i < len; i++) {
-	        int aux = array[offset1 + i];
-	        array[offset1 + i] = array[offset2 + i];
-	        array[offset2 + i] = aux;
-    	}
+            int aux = array[offset1 + i];
+            array[offset1 + i] = array[offset2 + i];
+            array[offset2 + i] = aux;
+        }
     }
 
     /**
@@ -2174,9 +2174,9 @@ public class ArrayUtils {
             return;
         }
         for (int i = 0; i < len; i++) {
-	        long aux = array[offset1 + i];
-	        array[offset1 + i] = array[offset2 + i];
-	        array[offset2 + i] = aux;
+            long aux = array[offset1 + i];
+            array[offset1 + i] = array[offset2 + i];
+            array[offset2 + i] = aux;
     	}
     }
 
@@ -2196,10 +2196,10 @@ public class ArrayUtils {
             return;
         }
         for (int i = 0; i < len; i++) {
-	        Object aux = array[offset1 + i];
-	        array[offset1 + i] = array[offset2 + i];
-	        array[offset2 + i] = aux;
-    	}
+            Object aux = array[offset1 + i];
+            array[offset1 + i] = array[offset2 + i];
+            array[offset2 + i] = aux;
+        }
     }
 
    /**
@@ -2218,10 +2218,10 @@ public class ArrayUtils {
             return;
         }
         for (int i = 0; i < len; i++) {
-	        short aux = array[offset1 + i];
-	        array[offset1 + i] = array[offset2 + i];
-	        array[offset2 + i] = aux;
-    	}
+            short aux = array[offset1 + i];
+            array[offset1 + i] = array[offset2 + i];
+            array[offset2 + i] = aux;
+        }
     }
 
     // Shift
@@ -2382,35 +2382,35 @@ public class ArrayUtils {
             return;
         }
         if (startIndexInclusive < 0) {
-        	startIndexInclusive = 0;
+            startIndexInclusive = 0;
         } 
         if (endIndexExclusive >= array.length) {
-        	endIndexExclusive = array.length;
+            endIndexExclusive = array.length;
         }        
         int n = endIndexExclusive - startIndexInclusive;
         if (n <= 1) {
-        	return;
+            return;
         }
-    	offset %= n;
-    	if (offset < 0) {
-    		offset += n;
-    	}
-		while (n > 1 && offset > 0) {
-			int n_offset = n - offset;
-			
-	    	if (offset > n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
-	    		n = offset;
-	    		offset -= n_offset;
-	    	} else if (offset < n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
-	    		startIndexInclusive += offset;
-	    		n = n_offset;
-	    	} else {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
-	    		break;
-	    	}
-		}
+        offset %= n;
+        if (offset < 0) {
+            offset += n;
+        }
+        while (n > 1 && offset > 0) {
+            int n_offset = n - offset;
+            
+            if (offset > n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
+                n = offset;
+                offset -= n_offset;
+            } else if (offset < n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
+                startIndexInclusive += offset;
+                n = n_offset;
+            } else {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
+                break;
+            }
+        }
     }
 
     /**
@@ -2440,35 +2440,35 @@ public class ArrayUtils {
             return;
         }
         if (startIndexInclusive < 0) {
-        	startIndexInclusive = 0;
+            startIndexInclusive = 0;
         } 
         if (endIndexExclusive >= array.length) {
-        	endIndexExclusive = array.length;
+            endIndexExclusive = array.length;
         }        
         int n = endIndexExclusive - startIndexInclusive;
         if (n <= 1) {
-        	return;
+            return;
         }
-    	offset %= n;
-    	if (offset < 0) {
-    		offset += n;
-    	}
-		while (n > 1 && offset > 0) {
-			int n_offset = n - offset;
-			
-	    	if (offset > n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
-	    		n = offset;
-	    		offset -= n_offset;
-	    	} else if (offset < n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
-	    		startIndexInclusive += offset;
-	    		n = n_offset;
-	    	} else {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
-	    		break;
-	    	}
-		}
+        offset %= n;
+        if (offset < 0) {
+            offset += n;
+        }
+        while (n > 1 && offset > 0) {
+            int n_offset = n - offset;
+            
+            if (offset > n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
+                n = offset;
+                offset -= n_offset;
+            } else if (offset < n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
+                startIndexInclusive += offset;
+                n = n_offset;
+            } else {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
+                break;
+            }
+        }
     }
 
     /**
@@ -2498,35 +2498,35 @@ public class ArrayUtils {
             return;
         }
         if (startIndexInclusive < 0) {
-        	startIndexInclusive = 0;
+            startIndexInclusive = 0;
         } 
         if (endIndexExclusive >= array.length) {
-        	endIndexExclusive = array.length;
+            endIndexExclusive = array.length;
         }        
         int n = endIndexExclusive - startIndexInclusive;
         if (n <= 1) {
-        	return;
+            return;
         }
-    	offset %= n;
-    	if (offset < 0) {
-    		offset += n;
-    	}
-		while (n > 1 && offset > 0) {
-			int n_offset = n - offset;
-			
-	    	if (offset > n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
-	    		n = offset;
-	    		offset -= n_offset;
-	    	} else if (offset < n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
-	    		startIndexInclusive += offset;
-	    		n = n_offset;
-	    	} else {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
-	    		break;
-	    	}
-		}
+        offset %= n;
+        if (offset < 0) {
+            offset += n;
+        }
+        while (n > 1 && offset > 0) {
+            int n_offset = n - offset;
+            
+            if (offset > n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
+                n = offset;
+                offset -= n_offset;
+            } else if (offset < n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
+                startIndexInclusive += offset;
+                n = n_offset;
+            } else {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
+                break;
+            }
+        }
     }
 
     /**
@@ -2556,35 +2556,35 @@ public class ArrayUtils {
             return;
         }
         if (startIndexInclusive < 0) {
-        	startIndexInclusive = 0;
+            startIndexInclusive = 0;
         } 
         if (endIndexExclusive >= array.length) {
-        	endIndexExclusive = array.length;
+            endIndexExclusive = array.length;
         }        
         int n = endIndexExclusive - startIndexInclusive;
         if (n <= 1) {
-        	return;
+            return;
         }
-    	offset %= n;
-    	if (offset < 0) {
-    		offset += n;
-    	}
-		while (n > 1 && offset > 0) {
-			int n_offset = n - offset;
-			
-	    	if (offset > n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
-	    		n = offset;
-	    		offset -= n_offset;
-	    	} else if (offset < n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
-	    		startIndexInclusive += offset;
-	    		n = n_offset;
-	    	} else {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
-	    		break;
-	    	}
-		}
+        offset %= n;
+        if (offset < 0) {
+            offset += n;
+        }
+        while (n > 1 && offset > 0) {
+            int n_offset = n - offset;
+            
+            if (offset > n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
+                n = offset;
+                offset -= n_offset;
+            } else if (offset < n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
+                startIndexInclusive += offset;
+                n = n_offset;
+            } else {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
+                break;
+            }
+        }
     }
 
     /**
@@ -2614,35 +2614,35 @@ public class ArrayUtils {
             return;
         }
         if (startIndexInclusive < 0) {
-        	startIndexInclusive = 0;
+            startIndexInclusive = 0;
         } 
         if (endIndexExclusive >= array.length) {
-        	endIndexExclusive = array.length;
+            endIndexExclusive = array.length;
         }        
         int n = endIndexExclusive - startIndexInclusive;
         if (n <= 1) {
-        	return;
+            return;
         }
-    	offset %= n;
-    	if (offset < 0) {
-    		offset += n;
-    	}
-		while (n > 1 && offset > 0) {
-			int n_offset = n - offset;
-			
-	    	if (offset > n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
-	    		n = offset;
-	    		offset -= n_offset;
-	    	} else if (offset < n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
-	    		startIndexInclusive += offset;
-	    		n = n_offset;
-	    	} else {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
-	    		break;
-	    	}
-		}
+        offset %= n;
+        if (offset < 0) {
+            offset += n;
+        }
+        while (n > 1 && offset > 0) {
+            int n_offset = n - offset;
+            
+            if (offset > n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
+                n = offset;
+                offset -= n_offset;
+            } else if (offset < n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
+                startIndexInclusive += offset;
+                n = n_offset;
+            } else {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
+                break;
+            }
+        }
     }
 
     /**
@@ -2672,35 +2672,35 @@ public class ArrayUtils {
             return;
         }
         if (startIndexInclusive < 0) {
-        	startIndexInclusive = 0;
+            startIndexInclusive = 0;
         } 
         if (endIndexExclusive >= array.length) {
-        	endIndexExclusive = array.length;
+            endIndexExclusive = array.length;
         }        
         int n = endIndexExclusive - startIndexInclusive;
         if (n <= 1) {
-        	return;
+            return;
         }
-    	offset %= n;
-    	if (offset < 0) {
-    		offset += n;
-    	}
-		while (n > 1 && offset > 0) {
-			int n_offset = n - offset;
-			
-	    	if (offset > n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
-	    		n = offset;
-	    		offset -= n_offset;
-	    	} else if (offset < n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
-	    		startIndexInclusive += offset;
-	    		n = n_offset;
-	    	} else {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
-	    		break;
-	    	}
-		}
+        offset %= n;
+        if (offset < 0) {
+            offset += n;
+        }
+        while (n > 1 && offset > 0) {
+            int n_offset = n - offset;
+            
+            if (offset > n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
+                n = offset;
+                offset -= n_offset;
+            } else if (offset < n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
+                startIndexInclusive += offset;
+                n = n_offset;
+            } else {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
+                break;
+            }
+        }
     }
 
     /**
@@ -2729,35 +2729,35 @@ public class ArrayUtils {
             return;
         }
         if (startIndexInclusive < 0) {
-        	startIndexInclusive = 0;
+            startIndexInclusive = 0;
         } 
         if (endIndexExclusive >= array.length) {
-        	endIndexExclusive = array.length;
+            endIndexExclusive = array.length;
         }        
         int n = endIndexExclusive - startIndexInclusive;
         if (n <= 1) {
-        	return;
+            return;
         }
-    	offset %= n;
-    	if (offset < 0) {
-    		offset += n;
-    	}
-		while (n > 1 && offset > 0) {
-			int n_offset = n - offset;
-			
-	    	if (offset > n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
-	    		n = offset;
-	    		offset -= n_offset;
-	    	} else if (offset < n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
-	    		startIndexInclusive += offset;
-	    		n = n_offset;
-	    	} else {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
-	    		break;
-	    	}
-		}
+        offset %= n;
+        if (offset < 0) {
+            offset += n;
+        }
+        while (n > 1 && offset > 0) {
+            int n_offset = n - offset;
+            
+            if (offset > n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
+                n = offset;
+                offset -= n_offset;
+            } else if (offset < n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
+                startIndexInclusive += offset;
+                n = n_offset;
+            } else {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
+                break;
+            }
+        }
     }
 
     /**
@@ -2786,35 +2786,35 @@ public class ArrayUtils {
             return;
         }
         if (startIndexInclusive < 0) {
-        	startIndexInclusive = 0;
+            startIndexInclusive = 0;
         } 
         if (endIndexExclusive >= array.length) {
-        	endIndexExclusive = array.length;
+            endIndexExclusive = array.length;
         }        
         int n = endIndexExclusive - startIndexInclusive;
         if (n <= 1) {
-        	return;
+            return;
         }
-    	offset %= n;
-    	if (offset < 0) {
-    		offset += n;
-    	}
-		while (n > 1 && offset > 0) {
-			int n_offset = n - offset;
-			
-	    	if (offset > n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
-	    		n = offset;
-	    		offset -= n_offset;
-	    	} else if (offset < n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
-	    		startIndexInclusive += offset;
-	    		n = n_offset;
-	    	} else {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
-	    		break;
-	    	}
-		}
+        offset %= n;
+        if (offset < 0) {
+            offset += n;
+        }
+        while (n > 1 && offset > 0) {
+            int n_offset = n - offset;
+            
+            if (offset > n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
+                n = offset;
+                offset -= n_offset;
+            } else if (offset < n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
+                startIndexInclusive += offset;
+                n = n_offset;
+            } else {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
+                break;
+            }
+        }
     }
 
     /**
@@ -2844,35 +2844,35 @@ public class ArrayUtils {
             return;
         }
         if (startIndexInclusive < 0) {
-        	startIndexInclusive = 0;
+            startIndexInclusive = 0;
         } 
         if (endIndexExclusive >= array.length) {
-        	endIndexExclusive = array.length;
+            endIndexExclusive = array.length;
         }        
         int n = endIndexExclusive - startIndexInclusive;
         if (n <= 1) {
-        	return;
+            return;
         }
-    	offset %= n;
-    	if (offset < 0) {
-    		offset += n;
-    	}
-		while (n > 1 && offset > 0) {
-			int n_offset = n - offset;
-			
-	    	if (offset > n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
-	    		n = offset;
-	    		offset -= n_offset;
-	    	} else if (offset < n_offset) {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
-	    		startIndexInclusive += offset;
-	    		n = n_offset;
-	    	} else {
-	    		swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
-	    		break;
-	    	}
-		}
+        offset %= n;
+        if (offset < 0) {
+            offset += n;
+        }
+        while (n > 1 && offset > 0) {
+            int n_offset = n - offset;
+            
+            if (offset > n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n - n_offset,  n_offset);
+                n = offset;
+                offset -= n_offset;
+            } else if (offset < n_offset) {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset,  offset);
+                startIndexInclusive += offset;
+                n = n_offset;
+            } else {
+                swap(array, startIndexInclusive, startIndexInclusive + n_offset, offset);
+                break;
+            }
+        }
     }
 
     // IndexOf search
