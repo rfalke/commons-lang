@@ -1876,6 +1876,15 @@ public class ArrayUtils {
      * <p>There is no special handling for multi-dimensional arrays.</p>
      *
      * <p>This method does nothing for a {@code null} input array.</p>
+     * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap(["1", "2", "3"], 0, 2) -> ["3", "2", "1"]</li>
+     *         <li>ArrayUtils.swap(["1", "2", "3"], 0, 0) -> ["1", "2", "3"]</li>
+     *         <li>ArrayUtils.swap(["1", "2", "3"], 1, 0) -> ["2", "1", "3"]</li>
+     *         <li>ArrayUtils.swap(["1", "2", "3"], 0, 5) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
      *
      * @param array the array to swap, may be {@code null}
      * @param offset1 the index of the first element to swap
@@ -1894,6 +1903,15 @@ public class ArrayUtils {
      *
      * <p>This method does nothing for a {@code null} input array.</p>
      *
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 2) -> [3, 2, 1]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 0) -> [1, 2, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 1, 0) -> [2, 1, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 5) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     *
      * @param array  the array to swap, may be {@code null}
      * @param offset1 the index of the first element to swap
      * @param offset2 the index of the second element to swap
@@ -1911,6 +1929,15 @@ public class ArrayUtils {
      *
      * <p>This method does nothing for a {@code null} input array.</p>
      *
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 2) -> [3, 2, 1]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 0) -> [1, 2, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 1, 0) -> [2, 1, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 5) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     * 
      * @param array  the array to swap, may be {@code null}
      * @param offset1 the index of the first element to swap
      * @param offset2 the index of the second element to swap
@@ -1927,6 +1954,15 @@ public class ArrayUtils {
      * <p>Swaps two elements in the given array.</p>
      *
      * <p>This method does nothing for a {@code null} input array.</p>
+     * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 2) -> [3, 2, 1]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 0) -> [1, 2, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 1, 0) -> [2, 1, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 5) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
      *
      * @param array  the array to swap, may be {@code null}
      * @param offset1 the index of the first element to swap
@@ -1945,6 +1981,15 @@ public class ArrayUtils {
      *
      * <p>This method does nothing for a {@code null} input array.</p>
      *
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 2) -> [3, 2, 1]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 0) -> [1, 2, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 1, 0) -> [2, 1, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 5) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     * 
      * @param array  the array to swap, may be {@code null}
      * @param offset1 the index of the first element to swap
      * @param offset2 the index of the second element to swap
@@ -1962,6 +2007,15 @@ public class ArrayUtils {
      *
      * <p>This method does nothing for a {@code null} input array.</p>
      *
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 2) -> [3, 2, 1]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 0) -> [1, 2, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 1, 0) -> [2, 1, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 5) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     * 
      * @param array  the array to swap, may be {@code null}
      * @param offset1 the index of the first element to swap
      * @param offset2 the index of the second element to swap
@@ -1979,6 +2033,15 @@ public class ArrayUtils {
      *
      * <p>This method does nothing for a {@code null} input array.</p>
      *
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 2) -> [3, 2, 1]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 0) -> [1, 2, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 1, 0) -> [2, 1, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 5) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     * 
      * @param array  the array to swap, may be {@code null}
      * @param offset1 the index of the first element to swap
      * @param offset2 the index of the second element to swap
@@ -1996,6 +2059,15 @@ public class ArrayUtils {
      *
      * <p>This method does nothing for a {@code null} input array.</p>
      *
+      * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 2) -> [3, 2, 1]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 0) -> [1, 2, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 1, 0) -> [2, 1, 3]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3], 0, 5) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     * 
      * @param array  the array to swap, may be {@code null}
      * @param offset1 the index of the first element to swap
      * @param offset2 the index of the second element to swap
@@ -2013,6 +2085,15 @@ public class ArrayUtils {
      *
      * <p>This method does nothing for a {@code null} input array.</p>
      *
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([true, false, true], 0, 2) -> [true, false, true]</li>
+     *         <li>ArrayUtils.swap([true, false, true], 0, 0) -> [true, false, true]</li>
+     *         <li>ArrayUtils.swap([true, false, true], 1, 0) -> [false, true, true]</li>
+     *         <li>ArrayUtils.swap([true, false, true], 0, 5) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     * 
      * @param array  the array to swap, may be {@code null}
      * @param offset1 the index of the first element to swap
      * @param offset2 the index of the second element to swap
@@ -2029,6 +2110,15 @@ public class ArrayUtils {
      * <p>Swaps a series of elements in the given array.</p>
      * 
      * <p>This method does nothing for a {@code null} input array.</p>
+     * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([true, false, true, false], 0, 2, 1) -> [true, false, true, false]</li>
+     *         <li>ArrayUtils.swap([true, false, true, false], 0, 0, 1) -> [true, false, true, false]</li>
+     *         <li>ArrayUtils.swap([true, false, true, false], 0, 2, 2) -> [true, false, true, false]</li>
+     *         <li>ArrayUtils.swap([true, false, true, false], 0, 5, 3) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
      * 
      * @param array the array to swap, may be {@code null}
      * @param offset1 the index of the first element in the series to swap
@@ -2051,6 +2141,15 @@ public class ArrayUtils {
      * <p>Swaps a series of elements in the given array.</p>
      * 
      * <p>This method does nothing for a {@code null} input array.</p>
+     * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 2, 1) -> [3, 2, 1, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 0, 1) -> [1, 2, 3, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 2, 0, 2) -> [3, 4, 1, 2]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 3, 3) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
      * 
      * @param array the array to swap, may be {@code null}
      * @param offset1 the index of the first element in the series to swap
@@ -2075,6 +2174,15 @@ public class ArrayUtils {
      * 
      * <p>This method does nothing for a {@code null} input array.</p>
      * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 2, 1) -> [3, 2, 1, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 0, 1) -> [1, 2, 3, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 2, 0, 2) -> [3, 4, 1, 2]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 3, 3) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     * 
      * @param array the array to swap, may be {@code null}
      * @param offset1 the index of the first element in the series to swap
      * @param offset2 the index of the second element in the series to swap
@@ -2096,6 +2204,15 @@ public class ArrayUtils {
      * <p>Swaps a series of elements in the given array.</p>
      * 
      * <p>This method does nothing for a {@code null} input array.</p>
+     * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 2, 1) -> [3, 2, 1, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 0, 1) -> [1, 2, 3, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 2, 0, 2) -> [3, 4, 1, 2]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 3, 3) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
      * 
      * @param array the array to swap, may be {@code null}
      * @param offset1 the index of the first element in the series to swap
@@ -2119,6 +2236,15 @@ public class ArrayUtils {
      * 
      * <p>This method does nothing for a {@code null} input array.</p>
      * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 2, 1) -> [3, 2, 1, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 0, 1) -> [1, 2, 3, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 2, 0, 2) -> [3, 4, 1, 2]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 3, 3) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     * 
      * @param array the array to swap, may be {@code null}
      * @param offset1 the index of the first element in the series to swap
      * @param offset2 the index of the second element in the series to swap
@@ -2140,6 +2266,15 @@ public class ArrayUtils {
      * <p>Swaps a series of elements in the given array.</p>
      * 
      * <p>This method does nothing for a {@code null} input array.</p>
+     * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 2, 1) -> [3, 2, 1, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 0, 1) -> [1, 2, 3, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 2, 0, 2) -> [3, 4, 1, 2]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 3, 3) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
      * 
      * @param array the array to swap, may be {@code null}
      * @param offset1 the index of the first element in the series to swap
@@ -2163,6 +2298,15 @@ public class ArrayUtils {
      * 
      * <p>This method does nothing for a {@code null} input array.</p>
      * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 2, 1) -> [3, 2, 1, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 0, 1) -> [1, 2, 3, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 2, 0, 2) -> [3, 4, 1, 2]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 3, 3) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     * 
      * @param array the array to swap, may be {@code null}
      * @param offset1 the index of the first element in the series to swap
      * @param offset2 the index of the second element in the series to swap
@@ -2185,6 +2329,15 @@ public class ArrayUtils {
      * 
      * <p>This method does nothing for a {@code null} input array.</p>
      * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap(["1", "2", "3", "4"], 0, 2, 1) -> ["3", "2", "1", "4"]</li>
+     *         <li>ArrayUtils.swap(["1", "2", "3", "4"], 0, 0, 1) -> ["1", "2", "3", "4"]</li>
+     *         <li>ArrayUtils.swap(["1", "2", "3", "4"], 2, 0, 2) -> ["3", "4", "1", "2"]</li>
+     *         <li>ArrayUtils.swap(["1", "2", "3", "4"], 0, 3, 3) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
+     * 
      * @param array the array to swap, may be {@code null}
      * @param offset1 the index of the first element in the series to swap
      * @param offset2 the index of the second element in the series to swap
@@ -2206,6 +2359,15 @@ public class ArrayUtils {
     * <p>Swaps a series of elements in the given array.</p>
     * 
     * <p>This method does nothing for a {@code null} input array.</p>
+     * 
+     * <p>Examples:
+     *     <ul>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 2, 1) -> [3, 2, 1, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 0, 1) -> [1, 2, 3, 4]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 2, 0, 2) -> [3, 4, 1, 2]</li>
+     *         <li>ArrayUtils.swap([1, 2, 3, 4], 0, 3, 3) -> ArrayOutOfBoundsException</li>
+     *     </ul>
+     * </p>
     * 
     * @param array the array to swap, may be {@code null}
     * @param offset1 the index of the first element in the series to swap
